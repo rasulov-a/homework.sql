@@ -1,0 +1,20 @@
+ create table answers_easy (id int, [question] varchar(max), answers varchar(max))
+ select * from answers_easy
+ insert into answers_easy values (2, 'Define the following terms: database, relational database, and table', 'Database - orgonized data, mostly on software that can be processed. Table - arrangement of data between rows and columns')
+ insert into answers_easy values (1, 'Define the following terms: data', 'Data - collection of words, numbers and other type of information that can be analyzed')
+ update answers_easy
+ set answers = 'Database - orgonized data, mostly on software that can be processed. Table - arrangement of data between rows and columns'
+ where id=2
+ insert into answers_easy values (3, 'List five key features of SQL Server.', 'As I found from web, there are 5 features: Advanced data management, security and compliance, high availability, BI and Scalability')
+ insert into answers_easy values (4, 'What are the different authentication modes available when connecting to SQL Server? (Give at least 2)', 'Windows authentification mode and sql server authentification')
+
+ create database SchoolDB
+ create table students ([StudentID] INT PRIMARY KEY, [Name] VARCHAR(50), Age INT)
+ select * from students
+ alter table students
+ add answer varchar (max)
+ insert into students values (1, 'Abdukodir', 25, 'SQL Server is the database engine, SQL is the language, SSMS is the tool to manage and query with SQL.') 
+ insert into students values (2, 'Begzod', 23, 'dunno')
+ insert into students values (3, 'Nozim', 22, 'dunno')
+ insert into students values (9, 'Task9',2107, 'Downloaded, then opened config of Databases => Restored database from downloaded file')
+ insert into students values (7, 'Task7', 2107, 'ddl -data definition language, dml - data manupulation language, dml - data manupulation language,dql - data query language, dcl - data control language, tcl - tool command language. I have read all languages, however I am too lazy to write it here')
